@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 印刷用: レビュー結果を紙/PDF に落とす際は入力パネルや操作 UI を隠す(基本設計 §4.4/§8.3) */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
